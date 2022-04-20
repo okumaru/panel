@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&family=Square+Peg&display=swap');
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: RGBA(0, 0, 0, 0.16);
+}
+
+#__next {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

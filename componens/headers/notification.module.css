@@ -1,0 +1,7 @@
+.notification {
+
+}
+
+.notification:hover {
+  cursor: pointer;
+}
