@@ -1,0 +1,44 @@
+.activityHeader {
+  margin: 2rem 0px;
+  padding: 0px 15px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.total {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  color: #4A5568;
+}
+
+.total> span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #A0AEC0;
+}
+
+.activityCenter {
+  display: flex;
+  align-items: center;
+}
+
+.activityDateTime {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.activityGroup {
+  
+}
+
+.activityDesc {
+  padding-right: 15px;
+}
+
+.activityDesc> p {
+  font-size: 14px;
+}

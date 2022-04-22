@@ -3,6 +3,7 @@ import { Box, Grid, GridItem } from "@chakra-ui/react";
 import { Sidebar } from "../componens/sidebars/sidebar";
 import { Header } from "../componens/headers/header";
 import { Footer } from "../componens/footers/footer";
+import { ActivitiesBoard } from "../componens/activities/activities";
 
 export default function Dashboard() {
   return (
@@ -33,8 +34,10 @@ export default function Dashboard() {
               {/* Main content */}
               <GridItem>asd</GridItem>
 
-              {/* Sub content */}
-              <GridItem>asd</GridItem>
+              {/* Sub content, activities section */}
+              <GridItem>
+                <ActivitiesBoard />
+              </GridItem>
             </Grid>
 
             <Footer />
