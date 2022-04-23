@@ -5,6 +5,17 @@ import { Header } from "../componens/headers/header";
 import { Footer } from "../componens/footers/footer";
 import { ActivitiesBoard } from "../componens/activities/activities";
 
+const BreadcrumbsData = [
+  {
+    link: "https://google.com/",
+    text: "Dashboard",
+  },
+  {
+    link: "https://google.com/",
+    text: "Sub Dashboard",
+  },
+];
+
 export default function Dashboard() {
   return (
     <>
@@ -28,11 +39,14 @@ export default function Dashboard() {
           {/* Content */}
           <GridItem style={{ position: "relative" }}>
             {/* Search & Profile section */}
-            <Header />
+            <Header title="Dashboard" breadcrumb={BreadcrumbsData} />
 
             <Grid templateColumns="auto 20rem" gap={4}>
               {/* Main content */}
-              <GridItem>asd</GridItem>
+              <GridItem>
+                {/* 3 Cards */}
+                <Box></Box>
+              </GridItem>
 
               {/* Sub content, activities section */}
               <GridItem>

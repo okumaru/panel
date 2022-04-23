@@ -1,4 +1,26 @@
-.wrap {
+.wrapperHeader {
   margin-top: 10px;
-  padding: 10px;
+  padding: 10px 15px;
+}
+
+.wrapperSubheader {
+  padding: 20px 15px;
+}
+
+.title {
+  text-transform: uppercase;
+  font-family: Montserrat,sans-serif;
+  font-weight: 700;
+}
+
+.breadcrumbItem {
+  align-items: center;
+}
+
+.breadcrumbItem> p {
+  font-size: 13px;
+}
+
+.lastBreadcrumbItem {
+  color: #718096;
 }
