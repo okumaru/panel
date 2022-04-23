@@ -1,6 +1,10 @@
-.activityHeader {
+.boardWrapper {
   margin: 2rem 0px;
   padding: 0px 15px;
+}
+
+.activityHeader {
+  margin-bottom: 2rem;
 }
 
 .title {
@@ -19,6 +23,7 @@
   font-size: 14px;
   font-weight: 500;
   color: #A0AEC0;
+  text-transform: uppercase;
 }
 
 .activityCenter {
@@ -36,7 +41,7 @@
 }
 
 .activityDesc {
-  padding-right: 15px;
+
 }
 
 .activityDesc> p {

@@ -97,9 +97,9 @@ const ActivitiesBody = () => {
 
 export const ActivitiesBoard = () => {
   return (
-    <>
+    <Box className={style.boardWrapper}>
       <ActivitiesHeader />
       <ActivitiesBody />
-    </>
+    </Box>
   );
 };
