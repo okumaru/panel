@@ -1,0 +1,11 @@
+.breadcrumbItem {
+  align-items: center;
+}
+
+.breadcrumbItem> p {
+  font-size: 13px;
+}
+
+.lastBreadcrumbItem {
+  color: #718096;
+}

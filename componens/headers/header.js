@@ -1,39 +1,11 @@
-import { Box, Text } from "@chakra-ui/react";
 import { Grid, GridItem } from "@chakra-ui/react";
 import { Flex, Spacer } from "@chakra-ui/react";
 import { Search } from "./search";
 import { Notification } from "./notification";
 import { Profile } from "./profile";
-import { BiChevronsRight } from "react-icons/bi";
+import { Breadcrumb } from "./breadcrumb";
+import { Title } from "./title";
 import style from "./header.module.css";
-
-const TitleSection = (props) => {
-  return <Text className={style.title}>{props.title}</Text>;
-};
-
-const BreadcrumbSection = (props) => {
-  const { breadcrumb } = props;
-  let lengthData = breadcrumb.length;
-  return (
-    <>
-      {breadcrumb.map((item, index) => {
-        return (
-          <Flex
-            key={index}
-            gap={2}
-            marginRight={2}
-            className={`${style.breadcrumbItem} ${
-              index === lengthData - 1 && style.lastBreadcrumbItem
-            }`}
-          >
-            <Text>{item.text}</Text>
-            {index !== lengthData - 1 && <BiChevronsRight />}
-          </Flex>
-        );
-      })}
-    </>
-  );
-};
 
 export const Header = (props) => {
   return (
@@ -57,9 +29,9 @@ export const Header = (props) => {
         </GridItem>
       </Grid>
       <Flex className={style.wrapperSubheader}>
-        <TitleSection {...props} />
+        <Title {...props} />
         <Spacer />
-        <BreadcrumbSection {...props} />
+        <Breadcrumb {...props} />
       </Flex>
     </>
   );
