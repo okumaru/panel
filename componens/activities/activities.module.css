@@ -8,8 +8,10 @@
 }
 
 .title {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 14px;
+  font-family: Montserrat,sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .total {
@@ -21,9 +23,8 @@
 
 .total> span {
   font-size: 14px;
+  color: #718096;
   font-weight: 500;
-  color: #A0AEC0;
-  text-transform: uppercase;
 }
 
 .activityCenter {
@@ -34,14 +35,6 @@
 .activityDateTime {
   font-size: 14px;
   font-weight: 500;
-}
-
-.activityGroup {
-  
-}
-
-.activityDesc {
-
 }
 
 .activityDesc> p {
