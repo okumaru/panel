@@ -1,0 +1,70 @@
+.cardWrapper {
+  flex: 1 1 auto;
+  padding: 0px 15px;
+}
+.cardBody {
+  padding: 1rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.cardIcon {
+  height: 3rem;
+  width: 3rem;
+  flex-shrink: 0;
+}
+
+.cardIcon> svg {
+  font-size: 24px;
+  color: #3182CE;
+}
+
+.cardData {
+  margin-left: 1rem;
+  flex-grow: 1;
+}
+
+.cardDataName {
+  text-transform: uppercase;
+  font-family: Montserrat,sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: RGBA(0, 0, 0, 0.36);
+}
+
+.cardDataSubname {
+  font-size: 12px;
+  color: #718096;
+}
+
+.cardDataTotal {
+  margin-top: 1rem;
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: right;
+  padding-right: 1rem;
+  color: RGBA(0, 0, 0, 0.64);
+}
+
+.cardPercent {
+  align-self: flex-end;
+  flex-shrink: 0;
+  padding: 3px 4px 3px 3px;
+  border-radius: 5px;
+  font-size: 10px;
+}
+
+.cardPercentUp {
+  color: #38A169;
+  background: #C6F6D5;
+}
+
+.cardPercentDown {
+  color: #E53E3E;
+  background: #FED7D7;
+}
+
+.cardPercent> p {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+}

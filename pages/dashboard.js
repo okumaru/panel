@@ -1,9 +1,12 @@
 import { Box, Grid, GridItem } from "@chakra-ui/react";
+import { Flex, Spacer } from "@chakra-ui/react";
 
 import { Sidebar } from "../componens/sidebars/sidebar";
 import { Header } from "../componens/headers/header";
 import { Footer } from "../componens/footers/footer";
 import { ActivitiesBoard } from "../componens/activities/activities";
+import { Card } from "../componens/cards/cards";
+import { BiPlanet, BiRocket, BiPackage } from "react-icons/bi";
 
 const BreadcrumbsData = [
   {
@@ -13,6 +16,31 @@ const BreadcrumbsData = [
   {
     link: "https://google.com/",
     text: "Sub Dashboard",
+  },
+];
+
+const CardsData = [
+  {
+    name: "Total Project",
+    subname: "In History",
+    total: "100",
+    icon: BiPlanet,
+  },
+  {
+    name: "Active Project",
+    subname: "Total in this month",
+    total: "5",
+    percentage: "12 %",
+    percentageType: "up",
+    icon: BiRocket,
+  },
+  {
+    name: "Finished Project",
+    subname: "Total in this month",
+    total: "95",
+    percentage: "1 %",
+    percentageType: "down",
+    icon: BiPackage,
   },
 ];
 
@@ -44,8 +72,22 @@ export default function Dashboard() {
             <Grid templateColumns="auto 20rem" gap={4}>
               {/* Main content */}
               <GridItem>
-                {/* 3 Cards */}
-                <Box></Box>
+                {/* Cards */}
+                <Flex flexWrap="wrap">
+                  {CardsData.map((card, index) => {
+                    return (
+                      <Card
+                        key={index}
+                        name={card.name}
+                        subname={card.subname}
+                        total={card.total}
+                        percentage={card.percentage}
+                        percentageType={card.percentageType}
+                        icon={card.icon}
+                      />
+                    );
+                  })}
+                </Flex>
               </GridItem>
 
               {/* Sub content, activities section */}
