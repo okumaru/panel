@@ -10,11 +10,7 @@ import style from "./header.module.css";
 export const Header = (props) => {
   return (
     <>
-      <Grid
-        templateColumns="auto 20rem"
-        gap={4}
-        className={style.wrapperHeader}
-      >
+      <Grid gap={4} className={style.wrapperHeader}>
         {/* Search section */}
         <GridItem>
           <Search />

@@ -6,3 +6,9 @@
 .wrapperSubheader {
   padding: 20px 15px;
 }
+
+@media (min-width: 900px) {
+  .wrapperHeader {
+    grid-template-columns: auto 20rem;
+  }
+}
