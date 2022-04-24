@@ -4,6 +4,7 @@ import { Flex, Spacer } from "@chakra-ui/react";
 import { Sidebar } from "../componens/sidebars/sidebar";
 import { Header } from "../componens/headers/header";
 import { Footer } from "../componens/footers/footer";
+import { DashboardWrapper } from "../componens/wrappers/dashboard";
 import { ActivitiesBoard } from "../componens/activities/activities";
 import { Card } from "../componens/cards/cards";
 import { BiPlanet, BiRocket, BiPackage } from "react-icons/bi";
@@ -43,6 +44,36 @@ const CardsData = [
   },
 ];
 
+const MainSection = () => {
+  return (
+    <>
+      <Flex flexWrap="wrap">
+        {CardsData.map((card, index) => {
+          return (
+            <Card
+              key={index}
+              name={card.name}
+              subname={card.subname}
+              total={card.total}
+              percentage={card.percentage}
+              percentageType={card.percentageType}
+              icon={card.icon}
+            />
+          );
+        })}
+      </Flex>
+    </>
+  );
+};
+
+const RightSection = () => {
+  return (
+    <>
+      <ActivitiesBoard />
+    </>
+  );
+};
+
 export default function Dashboard() {
   return (
     <>
@@ -73,32 +104,10 @@ export default function Dashboard() {
               userPermissions="Super Inovator"
             />
 
-            <Grid templateColumns="auto 20rem" gap={4}>
-              {/* Main content */}
-              <GridItem>
-                {/* Cards */}
-                <Flex flexWrap="wrap">
-                  {CardsData.map((card, index) => {
-                    return (
-                      <Card
-                        key={index}
-                        name={card.name}
-                        subname={card.subname}
-                        total={card.total}
-                        percentage={card.percentage}
-                        percentageType={card.percentageType}
-                        icon={card.icon}
-                      />
-                    );
-                  })}
-                </Flex>
-              </GridItem>
-
-              {/* Sub content, activities section */}
-              <GridItem>
-                <ActivitiesBoard />
-              </GridItem>
-            </Grid>
+            <DashboardWrapper
+              mainSection={<MainSection />}
+              rightSection={<RightSection />}
+            />
 
             <Footer />
           </GridItem>
