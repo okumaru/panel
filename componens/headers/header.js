@@ -24,7 +24,7 @@ export const Header = (props) => {
         <GridItem display="flex">
           <Flex align="center" gap={4}>
             <Notification />
-            <Profile />
+            <Profile {...props} />
           </Flex>
         </GridItem>
       </Grid>

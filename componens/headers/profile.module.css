@@ -1,3 +1,14 @@
 .profile:hover {
   cursor: pointer;
 }
+
+.profileName {
+  font-size: 14px;
+  font-weight: 600;
+  color: RGBA(0, 0, 0, 0.80);
+}
+
+.profilePermission {
+  font-size: 12px;
+  color: #718096;
+}

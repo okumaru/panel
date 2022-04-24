@@ -10,12 +10,11 @@ import { BiPlanet, BiRocket, BiPackage } from "react-icons/bi";
 
 const BreadcrumbsData = [
   {
-    link: "https://google.com/",
+    link: "http://localhost:3000/dashboard",
     text: "Dashboard",
   },
   {
-    link: "https://google.com/",
-    text: "Sub Dashboard",
+    text: "main",
   },
 ];
 
@@ -67,7 +66,12 @@ export default function Dashboard() {
           {/* Content */}
           <GridItem style={{ position: "relative" }}>
             {/* Search & Profile section */}
-            <Header title="Dashboard" breadcrumb={BreadcrumbsData} />
+            <Header
+              title="Dashboard"
+              breadcrumb={BreadcrumbsData}
+              userName="Andhika M. Wijaya"
+              userPermissions="Super Inovator"
+            />
 
             <Grid templateColumns="auto 20rem" gap={4}>
               {/* Main content */}
