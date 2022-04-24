@@ -74,19 +74,7 @@ const ActivitiesBody = () => {
               <Spacer />
             </GridItem>
             <GridItem className={style.activityDesc}>
-              <Text
-                style={
-                  (activities.group === "notification" && {}) ||
-                  (activities.group === "reminder" && {
-                    color: "#3182CE",
-                  }) ||
-                  (activities.group === "agenda" && {
-                    color: "#F56565",
-                  })
-                }
-              >
-                {activities.description}
-              </Text>
+              <Text>{activities.description}</Text>
             </GridItem>
           </Grid>
         );
