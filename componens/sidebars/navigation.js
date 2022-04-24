@@ -1,9 +1,19 @@
 import React, { useState } from "react";
 import { Box, Flex, Text } from "@chakra-ui/react";
-import { BiHomeSmile, BiRocket, BiCut, BiUser } from "react-icons/bi";
+import {
+  BiHomeSmile,
+  BiCrown,
+  BiRocket,
+  BiCut,
+  BiPlanet,
+} from "react-icons/bi";
 import style from "./navigation.module.css";
 
 const NavItems = [
+  {
+    icon: BiCrown,
+    text: "Customer",
+  },
   {
     icon: BiHomeSmile,
     text: "Dashboard",
@@ -13,12 +23,12 @@ const NavItems = [
     text: "Product",
   },
   {
-    icon: BiCut,
-    text: "Promotion",
+    icon: BiPlanet,
+    text: "Project",
   },
   {
-    icon: BiUser,
-    text: "User",
+    icon: BiCut,
+    text: "Promotion",
   },
 ];
 
