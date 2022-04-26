@@ -1,0 +1,66 @@
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 18px;font-family: 'Nunito', sans-serif;
+  color: RGBA(0, 0, 0, 0.80);
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #718096;
+}
+
+.wrapper {
+  overflow-x: auto;
+  margin-top: 2rem;
+}
+
+.wrapper> table {
+  width: 100%;
+  vertical-align: middle;
+  margin-bottom: 0px;
+  font-size: 14px;
+}
+
+.wrapper> table> thead {
+  vertical-align: bottom;
+  text-align: left;
+  color: RGBA(0, 0, 0, 0.64);
+}
+
+.wrapper> table> thead> *> *,
+.wrapper> table> tbody> *> * {
+  white-space: nowrap;
+  padding: 0.75rem 0.6rem;
+}
+
+.orderId, .amount {
+  font-family: 'Nunito', sans-serif;
+}
+
+.customer {
+  font-weight: 700;
+  color: RGBA(0, 0, 0, 0.64);
+}
+
+.amount {
+  color: #319795;
+}
+
+.status {
+  font-size: 12px;
+  padding: 3px 4px 3px 3px;
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.unpaid {
+  color: #E53E3E;
+  background: #FED7D7;
+}
+
+.paid {
+  color: #38A169;
+  background: #C6F6D5;
+}

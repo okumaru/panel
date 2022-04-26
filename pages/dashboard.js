@@ -7,6 +7,7 @@ import { Footer } from "../componens/footers/footer";
 import { DashboardWrapper } from "../componens/wrappers/dashboard";
 import { ActivitiesBoard } from "../componens/activities/activities";
 import { Card } from "../componens/cards/cards";
+import { RecentOrders } from "../componens/order/recentOrders";
 import { BiPlanet, BiRocket, BiPackage } from "react-icons/bi";
 
 const BreadcrumbsData = [
@@ -62,6 +63,8 @@ const MainSection = () => {
           );
         })}
       </Flex>
+
+      <RecentOrders />
     </>
   );
 };
